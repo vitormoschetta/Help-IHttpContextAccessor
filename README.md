@@ -29,12 +29,12 @@ public class ProdutoRepositorio
       _httpContextAccessor.HttpContext.Session.SetString("NomeSession", "valorSession");
   }
 	
-	public void BuscarSession()
+  public void BuscarSession()
   {
       var valorSession = _httpContextAccessor.HttpContext.Session.GetString("NomeSession");
   }
 	
-	public void LimparSession()
+  public void LimparSession()
   {
       _httpContextAccessor.HttpContext.Session.Remove("NomeSession");
   }
